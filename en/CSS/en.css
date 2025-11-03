@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Bull Text;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullText-Regular.woff2) format("woff2"), url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullText-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Bull Text;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullText-Medium.woff2) format("woff2"), url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullText-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: Bull Text;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullText-Bold.woff2) format("woff2"), url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullText-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Bull;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/Bull-Bold.woff2) format("woff2"), url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/Bull-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Bull;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/Bull-Heavy1.woff2) format("woff2"), url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/Bull-Heavy1.woff) format("woff")
+}
+
+@font-face {
+    font-family: Bull VF;
+    font-style: normal;
+    font-weight: 300 800;
+    font-display: swap;
+    src: url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullVAR.woff2) format("woff2-variations"), url(https://static-cosmos.redbull.com/foundation/latest/fonts/v5.001/BullVAR.woff2) format("woff2")
+}
+
+::selection{
+    background-color: rgb(81, 81, 81);
+    color: rgb(237, 237, 237);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    margin: 0;
+}
+
+.first-img {
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.column{
+    position: relative;
+    bottom: 12px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.main {
+    position: relative;
+    bottom: 60px;
+}
+
+.contents{
+    width: 100%;
+}
+
+.main-icon {
+    text-align: center;
+}
+
+.main-profile{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 200px;
+}
+
+.main-profile-title h2 {
+    font-family: Bull VF, Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(2, 0, 51);
+}
+
+.main-profile-hashtag h3{
+    text-align: center;
+    color: rgb(163, 163, 163);
+    font-weight: 100;
+    font-size: 14px;
+    font-family: Bull VF, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.main-profile-sns{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0 auto;
+    width: 150px;
+}
+
+.main-profile-sns li{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(199, 199, 199);
+    transition: all .2s;
+}
+
+.main-profile-sns li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.main-profile-sns li:hover{
+    background-color: rgb(215, 215, 215);
+}
+
+.main-content{
+    margin-top: 50px;
+}
+
+.main-content ul{
+    margin: 0 auto;
+    width: 280px;
+}
+
+.main-content ul li{
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.main-content ul li a:not(#special){
+    display: block;
+    background-color: rgb(209, 209, 209);
+    padding: 15px 20px;
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+    transition: all .1s;
+    font-family: Bull VF,Helvetica,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main-content ul li a:not(#special):hover{
+    background-color: rgb(195, 195, 195);
+}
+
+#special{
+    display: block;
+    background-color: #db0a40;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .1s;
+    font-family: Bull VF,Helvetica,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#special:hover{
+    background-color: #c00839;
+}
+
+.copyright{
+    width: 150px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    font-family: Bull VF,Helvetica,sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 900px){
+    .first-img{
+        height: 200px;
+        background-position: center 72%;
+        background-size: 900px;
+        grid-area: image;
+    }
+}
